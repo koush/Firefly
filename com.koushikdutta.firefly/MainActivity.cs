@@ -5,6 +5,7 @@ using android.os;
 using System.Windows;
 using system.windows;
 using System.Windows.Controls;
+using System.Windows.Threading;
 
 namespace com.koushikdutta.firefly
 {
@@ -14,6 +15,10 @@ namespace com.koushikdutta.firefly
         protected override void onCreate (Bundle arg0)
         {
             base.onCreate (arg0);
+            Console.WriteLine(System.Threading.Thread.CurrentThread.ManagedThreadId);
+            Dispatcher.CurrentDispatcher.BeginInvoke(new EmptyDelegate(() => {
+                Console.WriteLine("Foo!");
+            }), null);
    
             myWindow = new Window(this);
             setContentView(myWindow.SurfaceView);
