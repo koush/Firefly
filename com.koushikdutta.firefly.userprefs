@@ -1,6 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Xaml/Xaml/Media/BitmapSource.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Xaml/Xaml/Threading/Dispatcher.cs">
     <Files>
       <File FileName="../Xaml/Xaml/Threading/Dispatcher.cs" Line="96" Column="51" />
       <File FileName="../Xaml/Xaml/Media/BitmapSource.cs" Line="207" Column="31" />
@@ -17,18 +17,17 @@
                     <Node name="firefly" expanded="True" />
                   </Node>
                 </Node>
-                <Node name="System" expanded="True">
-                  <Node name="Windows" expanded="True" />
-                </Node>
               </Node>
             </Node>
           </Node>
           <Node name="OpenGLES" expanded="True" />
-          <Node name="Xaml" expanded="True" selected="True">
+          <Node name="Xaml" expanded="True">
             <Node name="References" expanded="True" />
             <Node name="Media" expanded="True" />
             <Node name="Shapes" expanded="True" />
-            <Node name="Threading" expanded="True" />
+            <Node name="Threading" expanded="True">
+              <Node name="Dispatcher.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

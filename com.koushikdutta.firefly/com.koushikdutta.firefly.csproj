@@ -54,7 +54,9 @@
     <None Include="Android\default.properties" />
     <None Include="Android\res\drawable\icon.png" />
     <None Include="Android\src\com\koushikdutta\firefly\MonoActivity.java" />
-    <None Include="Android\src\System\Windows\WindowActivity.java" />
+    <None Include="Android\src\system\windows\WindowActivity.java" />
+    <None Include="Android\src\com\koushikdutta\firefly\MainActivity.java" />
+    <None Include="Android\res\drawable\funny.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -63,11 +65,11 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\Xaml\Xaml\Xaml.csproj">
+    <ProjectReference Include="..\..\Xaml\Xaml\Xaml.csproj">
       <Project>{B0F3D819-EE09-4DEC-B0BF-CE18756FE2DD}</Project>
       <Name>Xaml</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\src\OpenGLES\OpenGLES.csproj">
+    <ProjectReference Include="..\..\OpenGLES\OpenGLES.csproj">
       <Project>{EF70FB24-4CF9-4C2D-87AB-418FD0F75A5C}</Project>
       <Name>OpenGLES</Name>
     </ProjectReference>
