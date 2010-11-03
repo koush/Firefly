@@ -1,9 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Xaml/Xaml/Threading/Dispatcher.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Xaml/Xaml/Threading/DispatcherTimer.cs">
     <Files>
-      <File FileName="../Xaml/Xaml/Threading/Dispatcher.cs" Line="96" Column="51" />
-      <File FileName="../Xaml/Xaml/Media/BitmapSource.cs" Line="207" Column="31" />
+      <File FileName="com.koushikdutta.firefly/MainActivity.cs" Line="43" Column="29" />
+      <File FileName="../Xaml/Xaml/Threading/Dispatcher.cs" Line="1" Column="1" />
+      <File FileName="../Xaml/Xaml/Media/BitmapSource.cs" Line="1" Column="1" />
+      <File FileName="../Xaml/Xaml/WindowActivity.cs" Line="1" Column="1" />
+      <File FileName="../Xaml/Xaml/Threading/DispatcherOperation.cs" Line="1" Column="1" />
+      <File FileName="../Xaml/Xaml/Media/Animation/AnimationClock.cs" Line="8" Column="46" />
+      <File FileName="../Xaml/Xaml/Media/Animation/AnimationSystem.cs" Line="62" Column="37" />
+      <File FileName="../Xaml/Xaml/Threading/DispatcherTimer.cs" Line="37" Column="95" />
+      <File FileName="../Xaml/Xaml/Media/Animation/FloatAnimation.cs" Line="1" Column="1" />
+      <File FileName="../Xaml/Xaml/Media/Animation/AnimationBase.cs" Line="1" Column="1" />
+      <File FileName="../Xaml/Xaml/Media/Animation/Clock.cs" Line="18" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,10 +20,26 @@
           <Node name="com.koushikdutta.firefly" expanded="True">
             <Node name="References" expanded="True" />
             <Node name="Android" expanded="True">
+              <Node name="gen" expanded="True">
+                <Node name="com" expanded="True">
+                  <Node name="koushikdutta" expanded="True">
+                    <Node name="firefly" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="res" expanded="True">
+                <Node name="drawable" expanded="True" />
+                <Node name="values" expanded="True" />
+              </Node>
               <Node name="src" expanded="True">
                 <Node name="com" expanded="True">
                   <Node name="koushikdutta" expanded="True">
                     <Node name="firefly" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="system" expanded="True">
+                  <Node name="windows" expanded="True">
+                    <Node name="threading" expanded="True" />
                   </Node>
                 </Node>
               </Node>
@@ -23,10 +48,12 @@
           <Node name="OpenGLES" expanded="True" />
           <Node name="Xaml" expanded="True">
             <Node name="References" expanded="True" />
-            <Node name="Media" expanded="True" />
+            <Node name="Media" expanded="True">
+              <Node name="Animation" expanded="True" />
+            </Node>
             <Node name="Shapes" expanded="True" />
             <Node name="Threading" expanded="True">
-              <Node name="Dispatcher.cs" selected="True" />
+              <Node name="DispatcherTimer.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -37,16 +64,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Volumes/Data/koush/Projects/com.koushikdutta.firefly/com.koushikdutta.firefly/MainActivity.cs" line="17" />
-      <Breakpoint file="/Volumes/Data/koush/src/Xaml/Xaml/WindowRenderer.cs" line="21" />
-      <Breakpoint file="/Volumes/Data/koush/src/Xaml/Xaml/WindowRenderer.cs" line="31" />
-      <Breakpoint file="/Volumes/Data/koush/src/Xaml/Xaml/WindowRenderer.cs" line="37" />
-      <Breakpoint file="/Volumes/Data/koush/Projects/com.koushikdutta.firefly/com.koushikdutta.firefly/MainActivity.cs" line="14" />
-      <Breakpoint file="/Volumes/Data/koush/src/Xaml/Xaml/WindowActivity.cs" line="23" />
-      <Breakpoint file="/Volumes/Data/koush/src/Xaml/Xaml/WindowActivity.cs" line="33" />
-      <Breakpoint file="/Volumes/Data/koush/src/Xaml/Xaml/WindowActivity.cs" line="39" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

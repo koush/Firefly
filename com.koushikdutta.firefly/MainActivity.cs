@@ -7,22 +7,55 @@ using system.windows;
 using System.Windows.Controls;
 using System.Windows.Threading;
 using System.Windows.Media;
+using System.Windows.Shapes;
+using System.Windows.Media;
+using System.Windows.Media.Animation;
 
 namespace com.koushikdutta.firefly
 {
     class MainWindow : Window
     {
+        DispatcherTimer myTimer;
+        AnimationClock myClock;
         public MainWindow(WindowActivity activity) : base(activity)
         {
-            Size ff = new Size(480, 640);
-            Console.WriteLine(ff);
+            SolidColorBrush solidBrush = new SolidColorBrush();
+
+            StackPanel stack = new StackPanel();
+
+            Rectangle rect = new Rectangle();
+            rect.Width = 100;
+            rect.Height = 100;
+            rect.HorizontalAlignment = HorizontalAlignment.Right;
+            GradientBrush gradient = new GradientBrush();
+            gradient.StartPoint = new Point(0, .5f);
+            gradient.EndPoint = new Point(1, .5f);
+            gradient.GradientStops.Add(new GradientStop(new Color(1f, 1f, 0f, 1f), 0));
+            gradient.GradientStops.Add(new GradientStop(new Color(0, 0, 1f, 1f), 1));
+            rect.Fill = gradient;
+            stack.Children.Add(rect);
+
             BitmapSource src = BitmapSource.Create(WindowActivity, R.drawable.funny);
-            
-            
             Image img = new Image();
             img.ImageSource = src;
-            
-            Content = img;
+
+            stack.Children.Add(img);
+            Content = stack;
+
+            FloatAnimation anim = new FloatAnimation();
+            anim.From = 50;
+            anim.To = 300;
+            anim.Duration = new Duration(TimeSpan.FromMilliseconds(10000));
+            anim.RepeatBehavior = RepeatBehavior.Forever;
+            anim.AutoReverse = true;
+            myClock = anim.CreateClock();
+            myClock.Animate(rect, Rectangle.WidthProperty);
+
+
+            //myTimer = new DispatcherTimer(TimeSpan.FromMilliseconds(1000), (e, o) => Console.WriteLine("Foo"), Dispatcher.CurrentDispatcher);
+            //myTimer.Start();
+
+            //Content = img;
         }
     }
 
