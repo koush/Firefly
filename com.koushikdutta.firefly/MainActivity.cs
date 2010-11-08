@@ -36,10 +36,23 @@ namespace com.koushikdutta.firefly
             stack.Children.Add(rect);
 
             BitmapSource src = BitmapSource.Create(WindowActivity, R.drawable.funny);
-            Image img = new Image();
-            img.ImageSource = src;
 
-            stack.Children.Add(img);
+            WrapPanel wrap = new WrapPanel();
+            //wrap.HorizontalAlignment = HorizontalAlignment.Center;
+            wrap.Orientation = Orientation.Horizontal;
+
+            for (int i = 0; i < 8; i++)
+            {
+                Image img = new Image();
+                img.Margin = new Thickness(5,5,5,5);
+                img.ImageSource = src;
+                img.HorizontalAlignment = HorizontalAlignment.Center;
+                wrap.Children.Add(img);
+            }
+
+            stack.HorizontalAlignment = HorizontalAlignment.Stretch;
+            stack.Children.Add(wrap);
+
             Content = stack;
 
             FloatAnimation anim = new FloatAnimation();

@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.koushikdutta.firefly", "com.koushikdutta.firefly\com.koushikdutta.firefly.csproj", "{9ECA3F9D-D8AF-436C-BFD3-BDACAEB3EDAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xaml", "..\..\src\Xaml\Xaml\Xaml.csproj", "{B0F3D819-EE09-4DEC-B0BF-CE18756FE2DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xaml", "..\Xaml\Xaml\Xaml.csproj", "{B0F3D819-EE09-4DEC-B0BF-CE18756FE2DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGLES", "..\..\src\OpenGLES\OpenGLES.csproj", "{EF70FB24-4CF9-4C2D-87AB-418FD0F75A5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGLES", "..\OpenGLES\OpenGLES.csproj", "{EF70FB24-4CF9-4C2D-87AB-418FD0F75A5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoJavaBridge", "..\..\src\androidmono\MonoJavaBridge\JavaBridge\MonoJavaBridge.csproj", "{9E6B94B9-A8CA-4497-838F-52620C9B6220}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoJavaBridge", "..\androidmono\MonoJavaBridge\JavaBridge\MonoJavaBridge.csproj", "{9E6B94B9-A8CA-4497-838F-52620C9B6220}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyObjectCodeGenerator", "..\Xaml\DependencyObjectCodeGenerator\DependencyObjectCodeGenerator.csproj", "{DC56338A-72A9-4D80-9C03-957124B678E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{B0F3D819-EE09-4DEC-B0BF-CE18756FE2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0F3D819-EE09-4DEC-B0BF-CE18756FE2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0F3D819-EE09-4DEC-B0BF-CE18756FE2DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC56338A-72A9-4D80-9C03-957124B678E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC56338A-72A9-4D80-9C03-957124B678E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC56338A-72A9-4D80-9C03-957124B678E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC56338A-72A9-4D80-9C03-957124B678E5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EF70FB24-4CF9-4C2D-87AB-418FD0F75A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EF70FB24-4CF9-4C2D-87AB-418FD0F75A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF70FB24-4CF9-4C2D-87AB-418FD0F75A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU

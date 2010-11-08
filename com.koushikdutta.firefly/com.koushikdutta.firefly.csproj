@@ -58,6 +58,7 @@
     <None Include="Android\src\com\koushikdutta\firefly\MainActivity.java" />
     <None Include="Android\res\drawable\funny.png" />
     <None Include="Android\gen\com\koushikdutta\firefly\R.java" />
+    <None Include="Android\src\system\windows\threading\DispatcherTimerTask.java" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
